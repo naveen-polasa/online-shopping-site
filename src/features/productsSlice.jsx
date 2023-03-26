@@ -13,9 +13,21 @@ export const getProducts = createAsyncThunk(
     }
   }
 );
+export const getSingleProduct = createAsyncThunk(
+  "getSingleProduct",
+  async (id, thunkAPI) => {
+    try {
+      const { data } = await axios(`${url}/${id}`);
+      return data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.message);
+    }
+  }
+);
 
 const initialState = {
   fetchedProducts: [],
+  singleProduct: [],
   isLoading: false,
   isError: false,
 };
@@ -34,6 +46,18 @@ const productsSlice = createSlice({
         state.fetchedProducts = payload;
       })
       .addCase(getProducts.rejected, (state, { payload }) => {
+        state.isLoading = false;
+        state.isError = true;
+        console.log(payload);
+      })
+      .addCase(getSingleProduct.pending, (state) => {
+        state.isLoading = true;
+      })
+      .addCase(getSingleProduct.fulfilled, (state, { payload }) => {
+        state.isLoading = false;
+        state.singleProduct = [payload];
+      })
+      .addCase(getSingleProduct.rejected, (state, { payload }) => {
         state.isLoading = false;
         state.isError = true;
         console.log(payload);

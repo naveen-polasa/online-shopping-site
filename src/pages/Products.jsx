@@ -27,7 +27,6 @@ const Products = () => {
     <section className="max-w-5xl mx-auto mt-8">
       <div className="flex flex-wrap justify-center md:justify-around lg:justify-around  gap-x-8 gap-y-5">
         {fetchedProducts.map((product) => {
-          console.log(product);
           return <Product key={product.id} {...product}></Product>;
         })}
       </div>
