@@ -3,7 +3,7 @@ import about from '../assets/about.svg'
 const About = () => {
   return (
     <main>
-      <div className="max-w-7xl mx-auto md:flex gap-x-12 lg:gap-x-3 lg:px-24 py-9 px-5 mt-10 h-[calc(100vh-12rem)]">
+      <div className="max-w-7xl mx-auto md:flex gap-x-12 lg:gap-x-3 lg:px-24 py-9 px-5 mt-10 min-h-[calc(100vh-12rem)]">
         <img
           src={about}
           alt="desk"
