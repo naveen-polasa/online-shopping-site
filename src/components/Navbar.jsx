@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo1.png";
 import { FaShoppingCart } from "react-icons/fa";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const { cartList } = useSelector((store) => store.cart);
   return (
     <nav className="py-3 h-[70px] border-b">
       <div className="flex justify-between px-5 max-w-7xl mx-auto">
@@ -20,7 +22,7 @@ const Navbar = () => {
             <span className="relative">
               <FaShoppingCart size="24px" />
               <span className="absolute -top-3 -right-3 bg-yellow-400 rounded-full px-1">
-                2
+                {cartList.length}
               </span>
             </span>
           </Link>

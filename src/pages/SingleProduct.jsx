@@ -38,7 +38,6 @@ const SingleProduct = () => {
     );
   }
 
-  console.log(singleProduct);
   const {
     category,
     description,
@@ -65,8 +64,7 @@ const SingleProduct = () => {
             />
           </section>
           <div className="md:w-[48%] md:mx-auto">
-            {/* <h2 className="text-xl capitalize font-semibold py-2">{title}</h2> */}
-            {/* <Stars stars={stars} reviews={reviews} /> */}
+            <h2 className="text-xl capitalize font-semibold py-2">{title}</h2>
             <div>
               <p>
                 <span className="font-semibold text-slate-800 w-16 inline-block">
