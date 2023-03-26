@@ -3,7 +3,7 @@ import hero from "../assets/hero.svg";
 
 const Home = () => {
   return (
-    <div className="max-w-7xl mx-auto md:flex items-center justify-around gap-x-12 lg:gap-x-3 py-16 px-5">
+    <div className="max-w-7xl mx-auto md:flex items-center justify-around gap-x-12 lg:gap-x-3 py-16 px-5 h-[calc(100vh-9.4rem)]">
       <article className="md:w-[77%] lg:w-[44%] ">
         <h1 className="text-3xl font-bold py-8">
           Design Your <br />

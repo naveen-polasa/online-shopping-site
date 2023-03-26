@@ -8,10 +8,10 @@ const Navbar = () => {
   return (
     <nav className="py-2 h-[70px] border-b">
       <div className="flex justify-between px-5 max-w-7xl mx-auto">
-        <Link to="/">
-          <img src={logo} alt="logo" className="w-32" />
+        <Link to="/" className="shrink-0">
+          <img src={logo} alt="logo" className="hidden sm:flex w-24 md:w-32" />
         </Link>
-        <div className="flex items-center gap-x-12 capitalize px-6 text-xl">
+        <div className="flex items-center gap-x-4 text-lg md:gap-x-12 capitalize px-6 md:text-xl font-mono">
           <Link to="/">Home</Link>
           <Link to="/products">Products</Link>
           <Link to="/about">About</Link>

@@ -9,7 +9,7 @@ const Product = ({ id, title, image, price }) => {
         <img
           src={image}
           alt={title}
-          className="w-80 h-72 rounded-xl border-2 border-slate-300"
+          className="w-80 h-72 p-5 rounded-xl border-2 border-slate-300"
         />
         <div className="opacity-0 hover:opacity-100 w-80 h-72 absolute top-0 left-0 flex justify-center items-center bg-black rounded-xl bg-opacity-40 duration-700">
           <Link to={`/products/${id}`}>

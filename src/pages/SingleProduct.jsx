@@ -56,14 +56,14 @@ const SingleProduct = () => {
           </button>
         </Link>
         <div className="px-5 py-4 lg:flex">
-          <section className="md:w-[50%] md:mx-auto lg:mx-0">
+          <section className="md:w-[66%] md:mx-auto lg:mx-0">
             <img
               src={image}
               alt={title}
-              className="w-[94%] md:w-[30rem] md:h-[25rem] h-96 mx-3  md:mx-0 my-3 rounded-2xl"
+              className="w-[94%] sm:w-[80%] mx-auto md:w-[30rem] md:h-[25rem] h-96 ms:mx-3  md:mx-0 my-3 rounded-2xl"
             />
           </section>
-          <div className="md:w-[48%] md:mx-auto">
+          <div className="md:w-[60%] md:mx-auto">
             <h2 className="text-xl capitalize font-semibold py-2">{title}</h2>
             <div>
               <p>
