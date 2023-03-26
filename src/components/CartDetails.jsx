@@ -29,7 +29,7 @@ const CartDetails = () => {
       <article className="px-5 py-4 my-3 mx-9  border rounded-xl">
         <div className="flex justify-between">
           <h4 className="font-semibold text-2xl">Order Total :</h4>
-          <span className="font-mono text-xl">
+          <span className="font-mono text-2xl mr-10">
             {formatPrice(
               cartList.reduce((acc, cur) => {
                 return (acc += cur.quantity * cur.price);

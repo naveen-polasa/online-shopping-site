@@ -49,9 +49,9 @@ const SingleProduct = () => {
   } = singleProduct;
   return (
     <section>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto min-h-[calc(100vh-9rem)]">
         <Link to="/products">
-          <button className="py-2 px-4 mx-5 mt-4 text-lg border border-orange-500 hover:scale-105 duration-300 text-white bg-orange-400 rounded-xl">
+          <button className="py-2 my-9 px-4 mx-5 mt-4 text-lg border border-orange-500 hover:scale-105 duration-300 text-white bg-orange-400 rounded-xl">
             Products
           </button>
         </Link>
@@ -60,7 +60,7 @@ const SingleProduct = () => {
             <img
               src={image}
               alt={title}
-              className="w-[94%] sm:w-[80%] mx-auto md:w-[30rem] md:h-[25rem] h-96 ms:mx-3  md:mx-0 my-3 rounded-2xl"
+              className="w-[94%] p-5 sm:w-[80%] mx-auto md:w-[30rem] md:h-[25rem] h-96 ms:mx-3  lg:mx-0 my-3 rounded-2xl"
             />
           </section>
           <div className="md:w-[60%] md:mx-auto">
