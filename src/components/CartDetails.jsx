@@ -26,9 +26,9 @@ const CartDetails = () => {
       {cartList.map((item) => {
         return <CartItem key={item.id} {...item} />;
       })}
-      <article className="px-5 py-2 my-3 mx-9  border rounded-xl">
+      <article className="px-5 py-4 my-3 mx-9  border rounded-xl">
         <div className="flex justify-between">
-          <h4 className="font-semibold text-xl">Order Total :</h4>
+          <h4 className="font-semibold text-2xl">Order Total :</h4>
           <span className="font-mono text-xl">
             {formatPrice(
               cartList.reduce((acc, cur) => {

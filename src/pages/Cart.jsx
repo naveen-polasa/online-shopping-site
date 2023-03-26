@@ -17,7 +17,7 @@ const Cart = () => {
     );
   }
   return (
-    <main>
+    <main className="min-h-[calc(100vh-9rem)]">
       <div>
         <CartDetails />
       </div>
