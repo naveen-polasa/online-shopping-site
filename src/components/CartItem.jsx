@@ -6,7 +6,6 @@ import AmountButtons from "./AmountButtons";
 
 const CartItem = ({ id, image, title, price, quantity: amount }) => {
   const dispatch = useDispatch();
-  console.log(id)
   const increase = () => dispatch(toggleQuantity({ id, type: "inc" }));
   const decrease = () => dispatch(toggleQuantity({ id, type: "dec" }));
   return (

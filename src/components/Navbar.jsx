@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 const Navbar = () => {
   const { cartList } = useSelector((store) => store.cart);
   return (
-    <nav className="py-3 h-[70px] border-b">
+    <nav className="py-2 h-[70px] border-b">
       <div className="flex justify-between px-5 max-w-7xl mx-auto">
         <Link to="/">
           <img src={logo} alt="logo" className="w-32" />

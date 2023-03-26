@@ -24,8 +24,8 @@ const Products = () => {
   }
 
   return (
-    <section className="max-w-5xl mx-auto mt-8">
-      <div className="flex flex-wrap justify-center md:justify-around lg:justify-around  gap-x-8 gap-y-5">
+    <section className="max-w-7xl mx-auto ">
+      <div className=" max-w-6xl mx-auto flex flex-wrap justify-center md:justify-around lg:justify-around  gap-x-8 gap-y-5 mt-8">
         {fetchedProducts.map((product) => {
           return <Product key={product.id} {...product}></Product>;
         })}
